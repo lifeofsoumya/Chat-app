@@ -66,8 +66,26 @@ textarea {
 }
 .message h4 {
     position: absolute;
+    font-weight: 400;
     top: -20px;
     left: 0;
-    color: #333;
-    font-size: 14px;
+    color: rgb(139, 139, 139);
+    font-size: 12px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(66, 166, 206);
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background:rgb(202, 202, 202);
 }
