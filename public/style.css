@@ -90,17 +90,6 @@ textarea {
     right: -10px;
 }
 
-/* .message-orange:before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-bottom: 17px solid #dfd087;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    bottom: -1px;
-    right: -17px;
-} */
 .message h4 {
     position: absolute;
     font-weight: 400;
@@ -120,7 +109,7 @@ textarea {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(66, 166, 206);
+    background: #c1c4ee;
     border-radius: 10px;
 }
 
@@ -135,5 +124,6 @@ textarea::-webkit-scrollbar-thumb {
 }
 #send-icon:hover{
     transform: translate(-160%, 70%) rotate(45deg);
+    transform-origin: 50%;
     transition: transform .1s ease-in-out;
 }
