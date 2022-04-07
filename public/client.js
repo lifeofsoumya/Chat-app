@@ -3,14 +3,21 @@ const socket = io()
 let namE;
 let textarea = document.querySelector('#textarea')
 let messageArea = document.querySelector('.message__area')
+let sendBtn = document.querySelector('#send-icon');
 
 do {
     namE = prompt('Enter your Name: ')
 } while(!namE);
 
 textarea.addEventListener('keyup', (e)=>{
-    if(e.key=== 'Enter'){
-        sendMessage(e.target.value)
+    if(e.key=== 'Enter' && textarea.value != ''){
+        sendMessage(e.target.value) // function to send message with enter
+    }
+})
+
+sendBtn.addEventListener('click',()=>{
+    if (textarea.value != ''){
+        sendMessage(textarea.value) // function to send message with send icon
     }
 })
 
@@ -24,7 +31,7 @@ function sendMessage(message){
     appendMessage(msg, 'outgoing')
     textarea.value = ''; //emptying the message typing section after sending a message
     scrollToBottom()
-    
+
     // sending to server
     socket.emit('message', msg)
 }
