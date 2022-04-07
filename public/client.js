@@ -10,7 +10,7 @@ do {
 } while(!namE);
 
 textarea.addEventListener('keyup', (e)=>{
-    if(e.key=== 'Enter' && textarea.value != ''){
+    if(e.target.value !== '' && e.key=== 'Enter'){
         sendMessage(e.target.value) // function to send message with enter
     }
 })

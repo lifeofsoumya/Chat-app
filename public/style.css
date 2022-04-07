@@ -94,4 +94,9 @@ textarea::-webkit-scrollbar-thumb {
 #send-icon{
     position: absolute;
     transform: translate(-160%, 70%);
+    cursor: pointer;
+}
+#send-icon:hover{
+    transform: translate(-160%, 70%) rotate(45deg);
+    transition: transform .1s ease-in-out;
 }
