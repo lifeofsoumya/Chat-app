@@ -90,3 +90,8 @@ textarea {
 textarea::-webkit-scrollbar-thumb {
     background:rgb(202, 202, 202);
 }
+
+#send-icon{
+    position: absolute;
+    transform: translate(-160%, 70%);
+}
