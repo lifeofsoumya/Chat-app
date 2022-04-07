@@ -17,7 +17,6 @@ app.get('/', (req, res)=>{
 const io = require('socket.io')(http);
 
 io.on('connection', (socket)=>{
-    console.log('socket is on bruh!')
     socket.on('message', (msg)=>{
         socket.broadcast.emit('message', msg)
     })
