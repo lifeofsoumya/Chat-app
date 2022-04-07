@@ -50,12 +50,26 @@ function appendMessage(msg, type){
     messageArea.appendChild(mainDiv);
 }
 
+// user joined
+function userJoined(msg, userUpdate){
+    let joinDiv = document.createElement('div')
+    let className = userUpdate
+    joinDiv.classList.add(className)
+
+    let userStatus = `
+        <h4>${msg.user} Joined the Chat</h4>
+    `
+    joinDiv.innerHTML = userStatus
+    messageArea.appendChild(userStatus);
+}
+
 // Receive messages
 
 socket.on('message', (msg)=>{
     appendMessage(msg, 'incoming')
     scrollToBottom()
 })
+
 
 // bottom scrolling after sending a message
 

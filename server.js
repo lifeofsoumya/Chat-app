@@ -20,4 +20,14 @@ io.on('connection', (socket)=>{
     socket.on('message', (msg)=>{
         socket.broadcast.emit('message', msg)
     })
+
+// updating about new user
+
+    socket.on('newUser', (username)=>{
+        socket.broadcast.emit('update', username + "joined the Chat")
+    })
+
+    socket.on('exitUser', (username)=>{
+        socket.broadcast.emit('update', username + "left the Chat")
+    })
 })
