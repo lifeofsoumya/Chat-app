@@ -134,3 +134,12 @@ textarea::-webkit-scrollbar-thumb {
     transform: translate(35%, 85%);
     color:grey;
 }
+.ico{
+    position:relative;
+    float:right;
+    transform: translate(-60%, -175%);
+}
+.info-ico:hover{
+    transform: scale(1.3);
+    transition: transform .1s ease-in-out;
+}
