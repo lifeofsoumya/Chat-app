@@ -30,6 +30,7 @@ section.chat__section {
     font-size: 20px;
     color: #444;
     margin-left: 10px;
+    transform: translateY(-28%);
 }
 .message__area{
     height: 500px;
@@ -130,5 +131,6 @@ textarea::-webkit-scrollbar-thumb {
 
 .tagline{
     position:absolute;
-    transform: translate(35%, 130%);
+    transform: translate(35%, 85%);
+    color:grey;
 }
