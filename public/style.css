@@ -141,10 +141,37 @@ textarea::-webkit-scrollbar-thumb {
     color:grey;
 }
 .ico{
+    display: inline;
     position:relative;
     transform: translate(200%);
 }
 .info-ico:hover{
     transform: scale(1.2);
     transition: transform .1s ease-in-out;
+}
+
+/* info tooltip */
+.tooltip {
+    margin-left:40px;
+    position: relative;
+    display: inline-block;
+}
+
+  /* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: rgb(77, 77, 77);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    margin-left:15px;
+}
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
