@@ -55,7 +55,7 @@ textarea {
 }
 
 .message {
-    padding: 20px; 
+    padding: 10px 20px; 
     border-radius: 4px; 
     margin-bottom: 40px;
     max-width: 300px;
@@ -82,7 +82,6 @@ textarea {
     background: #e9eafd;
     color: #787986;
     margin-left: auto;
-    width: auto;
 }
 
 .outgoing:after {
@@ -143,8 +142,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 .ico{
     position:relative;
-    float:right;
-    transform: translate(-60%, -175%);
+    transform: translate(200%);
 }
 .info-ico:hover{
     transform: scale(1.2);
