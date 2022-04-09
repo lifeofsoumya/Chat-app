@@ -123,14 +123,17 @@ textarea::-webkit-scrollbar-thumb {
     background:rgb(202, 202, 202);
 }
 
-#send-icon{
+#down-icon{
     position: absolute;
     transform: translate(-160%, 70%);
     cursor: pointer;
     user-select: none;
 }
+#custom-file{
+    margin-right:10px;
+}
 #send-icon:hover{
-    transform: translate(-160%, 70%) rotate(45deg);
+    transform: rotate(45deg);
     transform-origin: 50%;
     transition: transform .1s ease-in-out;
 }
@@ -174,4 +177,16 @@ textarea::-webkit-scrollbar-thumb {
   /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+.tooltip .tooltiptext {
+    width: 140px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px; 
+}
+
+@media screen and (max-width:929px){
+    #custom-file{
+        display: none;
+    }
 }

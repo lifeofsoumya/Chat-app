@@ -5,6 +5,18 @@ let textarea = document.querySelector('#textarea')
 let messageArea = document.querySelector('.message__area')
 let sendBtn = document.querySelector('#send-icon');
 
+// for image handling
+
+const realFileBtn = document.querySelector('#real-file')
+const customFileBtn = document.querySelector('#custom-file')
+
+customFileBtn.addEventListener("click", ()=>{
+    realFileBtn.click();
+})
+
+
+// asking to enter name 
+
 do {
     namE = prompt('Enter your Name: ')
 } while(!namE);

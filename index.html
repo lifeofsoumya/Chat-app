@@ -35,7 +35,16 @@
         <div>
             <textarea style="resize: none;" id="textarea" cols="30" rows="1" placeholder="Write a Message"
                 autofocus></textarea>
-            <span id="send-icon"><svg width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <span id="down-icon">
+                <input type="file" id="real-file" hidden="hidden">
+                <svg id="custom-file" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    aria-labelledby="imageIconTitle" stroke="#42a6ce" stroke-linecap="square" fill="none" color="#000">
+                    <path d="M3 3h18v18H3z" />
+                    <path stroke-linecap="round" d="m3 14 4-4 11 11" />
+                    <circle cx="13.5" cy="7.5" r="2.5" />
+                    <path stroke-linecap="round" d="M13.5 16.5 21 9" />
+                </svg>
+                <svg id="send-icon" width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path data-name="send-Filled"
                         d="m21.421 5.669-3.28 13.12a3.529 3.529 0 0 1-3.47 2.71h-.02a3.524 3.524 0 0 1-3.46-2.76l-.86-3.65 5.38-5.38a1 1 0 1 0-1.42-1.42l-5.38 5.38-3.65-.86a3.575 3.575 0 0 1-.05-6.95l13.12-3.28a2.548 2.548 0 0 1 3.09 3.09Z"
                         style="fill:#42a6ce" />
