@@ -1,13 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="/anonymessage.png">
-    <title>How to use AnonyMessage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>How to use | Rules</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin-top: 20px;
+            color: #1a202c;
+            text-align: left;
+            background-color: #ffffff;
+        }
+
+        .main-body {
+            padding: 15px;
+        }
+
+        .card {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 0 solid rgba(0, 0, 0, .125);
+            border-radius: .25rem;
+        }
+
+        .card-body {
+            flex: 1 1 auto;
+            min-height: 1px;
+            padding: 1rem;
+        }
+
+        .gutters-sm {
+            margin-right: -8px;
+            margin-left: -8px;
+        }
+
+        .gutters-sm>.col,
+        .gutters-sm>[class*=col-] {
+            padding-right: 8px;
+            padding-left: 8px;
+        }
+
+        .mb-3,
+        .my-3 {
+            margin-bottom: 1rem !important;
+        }
+
+        .bg-gray-300 {
+            background-color: #e2e8f0;
+        }
+
+        .h-100 {
+            height: 100% !important;
+        }
+
+        .shadow-none {
+            box-shadow: none !important;
+        }
+
+        .redbtn {
+            background-color: #fd6464;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+        }
+
+        .redbtn:hover {
+            background-color: #ff5b5b;
+        }
+
+        .btnshalf {
+            margin: auto;
+        }
+
+        @media screen and (max-width: 401px) {
+            .btnshalf img {
+                width: 150px;
+            }
+
+        }
+
+        @media screen and (max-width: 1210px) {
+            .btnshalf img {
+                width: 220px;
+            }
+
+        }
+
+
+
+        .card-body h3 {
+            background-color: #530c74;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            text-align: center;
+            font-size: 1em !important;
+            border: 2px solid white;
+        }
+
+        .card-body:hover h3 {
+            color: #530c74;
+            background-color: transparent;
+            border: 2px solid #530c74;
+            font-size: 1em !important;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .btn {
+            border-radius: 14px;
+        }
+
+        .btn-outline-msg {
+            border: 2px solid #0e71ea;
+            color: #0e71ea;
+        }
+
+        .btn-outline-msg:hover {
+            border: 2px solid transparent;
+            background-color: #0e71ea;
+            color: white;
+        }
+
+        /* faq section */
+
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .faq-content {
+            margin: 0 auto;
+        }
+
+        .faq-question {
+            padding: 20px 0;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .panel-title {
+            font-size: 16px;
+            width: 100%;
+            position: relative;
+            margin: 0;
+            padding: 10px 10px 0 48px;
+            display: block;
+            cursor: pointer;
+        }
+
+        .panel-content {
+            font-weight: 400;
+            font-size: 14px;
+            padding: 0px 14px;
+            color: black;
+            margin: 0 40px;
+            height: 0;
+            overflow: hidden;
+            z-index: 1;
+            position: relative;
+            opacity: 0;
+            -webkit-transition: .4s ease;
+            -moz-transition: .4s ease;
+            -o-transition: .4s ease;
+            transition: .4s ease;
+        }
+
+        .panel:checked~.panel-content {
+            height: auto;
+            opacity: 1;
+            padding: 14px;
+        }
+
+        .plus {
+            position: absolute;
+            margin-left: 20px;
+            margin-top: 4px;
+            z-index: 5;
+            font-size: 32px;
+            line-height: 100%;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            -webkit-transition: .2s ease;
+            -moz-transition: .2s ease;
+            -o-transition: .2s ease;
+            transition: .2s ease;
+        }
+
+        .panel:checked~.plus {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .panel {
+            display: none;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="main-body">
+            <div class="row gutters-sm">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="/anonymessage.png" width="100">
+                                <div class="mt-3">
+                                    <h4>AnonyMessage</h4>
+                                    <p class="text-secondary mb-1">Roast your friend with a Mask on</p>
+                                    </br>
+                                    <button class="btn btn-primary" onclick="window.open('/')">AnonyMessage</button>
+                                    <button class=" btn btn-outline-msg"
+                                        onclick="window.open('https://metatool.in/services')">Perks</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <br>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4> <img
+                                    src="https://img.icons8.com/external-konkapp-outline-color-konkapp/64/000000/external-working-work-from-home-konkapp-outline-color-konkapp.png"
+                                    width="32px" /> &nbsp;
+                                Rules and Regulations >></h4>
+                            <div class="faq-content">
+                                <div class="faq-question">
+                                    <input id="q1" type="checkbox" class="panel">
+                                    <div class="plus">+</div>
+                                    <label for="q1" class="panel-title">For fun among friends</label>
+                                    <div class="panel-content">You can ask your friends to join and have fun chatting
+                                        anonymously among friends</div>
+                                </div>
+
+                                <div class="faq-question">
+                                    <input id="q2" type="checkbox" class="panel">
+                                    <div class="plus">+</div>
+                                    <label for="q2" class="panel-title">Do no go Peevish..</label>
+                                    <div class="panel-content">Avoid sending any message that might hurt a stable mind
+                                    </div>
+                                </div>
+
+                                <div class="faq-question">
+                                    <input id="q3" type="checkbox" class="panel">
+                                    <div class="plus">+</div>
+                                    <label for="q3" class="panel-title">Do not go against law</label>
+                                    <div class="panel-content">Completely avoid mentioning anything against the law of
+                                        the nation and be peaceful while interacting with others </div>
+                                </div>
+                                <div class="faq-question">
+                                    <input id="q4" type="checkbox" class="panel">
+                                    <div class="plus">+</div>
+                                    <label for="q4" class="panel-title">Avoid vulgar Language</label>
+                                    <div class="panel-content">You're strictly advised not to mention any vulgar
+                                        language to other users.
+                                    </div>
+                                </div>
+                                <div class="faq-question">
+                                    <input id="q5" type="checkbox" class="panel">
+                                    <div class="plus">+</div>
+                                    <label for="q5" class="panel-title">Stay away from Adult content</label>
+                                    <div class="panel-content">Remember not to post or talk about any adult content,
+                                        similar messages or you might end up getting blacklisted by the server.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 </body>
+
+
 </html>
