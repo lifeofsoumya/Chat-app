@@ -18,6 +18,8 @@
             <span class="tagline">
                 <p style="font-size:11px;">Roast your friend with a Mask on</p>
             </span>
+            
+            <!-- info section -->
             <div class="tooltip"><span class="ico"><a href="/info.html" target="_blank">
                         <svg class="info-ico" width="24" height="24" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -28,6 +30,7 @@
                 </span>
                 <span class="tooltiptext">How to use the Chat?</span>
             </div>
+            <!-- info section -->
 
         </div>
         <div class="message__area">
@@ -52,7 +55,9 @@
         </div>
     </section>
     <script src="/socket.io/socket.io.js"></script>
-    <script src="/client.js"></script>
+    <!-- it redirects to the socket.io exposed js file which is created automatically -->
+    <script src="/client.js"></script> 
+    <!-- it directs to the public static client.js file -->
 </body>
 
 </html>
