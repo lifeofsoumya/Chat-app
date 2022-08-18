@@ -36,16 +36,16 @@ sendBtn.addEventListener('click',()=>{
 function sendMessage(message){
     let msg = {
         user: namE,
-        message: message.trim()
+        message: message.trim() // .trim removes white spaces
     }
     
     // Append
-    appendMessage(msg, 'outgoing')
+    appendMessage(msg, 'outgoing') // for frontend
     textarea.value = ''; //emptying the message typing section after sending a message
     scrollToBottom()
 
     // sending to server
-    socket.emit('message', msg)
+    socket.emit('message', msg) // sends to the server for others
 }
 
 function appendMessage(msg, type){
