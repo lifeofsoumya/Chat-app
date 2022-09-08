@@ -39,17 +39,17 @@ function sendMessage(message){
         message: message.trim() // .trim removes white spaces
     }
     
-    // Append
+    // append
     appendMessage(msg, 'outgoing') // for frontend
     textarea.value = ''; //emptying the message typing section after sending a message
-    scrollToBottom()
+    scrollDown()
 
     // sending to server
     socket.emit('message', msg) // sends to the server for others
 }
 
 function appendMessage(msg, type){
-    let mainDiv = document.createElement('div')
+    let mainDiv = document.createElement('span')
     let className = type
     mainDiv.classList.add(className, 'message')
 
@@ -79,12 +79,12 @@ function userJoined(msg, userUpdate){
 
 socket.on('message', (msg)=>{
     appendMessage(msg, 'incoming')
-    scrollToBottom()
+    scrollDown()
 })
 
 
 // bottom scrolling after sending a message
 
-function scrollToBottom(){
+function scrollDown(){
     messageArea.scrollTop = messageArea.scrollHeight;
 }
